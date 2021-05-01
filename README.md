@@ -8,4 +8,5 @@ xhost +
 sudo docker run -i -t -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY <docker_id> /bin/bash
 
 Now inside docker, you can check
+
 gst-launch-1.0 videotestsrc ! xvimagesink
