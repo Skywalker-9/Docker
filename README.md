@@ -41,6 +41,15 @@ $ docker system prune
 this will show nothing as the output of "docker ps -a" command if no container is running
 
 
+To map a host directory inside a docker simply add below option to docker run
+
+-v /host/directory/:/docker/directory/
+
+e.g.
+
+$ sudo docker run -i -t -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/vpagar/:/tmp/ -e DISPLAY=$DISPLAY new_image_name:tag_name /bin/bash
+
+above command will map host machine's home directory i.e. /home/vpagar/ here into /tmp/ directory of docker 
 
 
 
