@@ -32,3 +32,23 @@ $ gst-inspect-1.0 avdec_h264
 
 
 This way any changes made will get commited in the new docker image
+
+
+For removing stopped containers, dangling images, dangling build cache
+
+$ docker system prune
+
+this will show nothing as the output of "docker ps -a" command if no container is running
+
+
+
+
+
+
+
+
+
+
+
+
+
